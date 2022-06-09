@@ -67,6 +67,10 @@ Puis on va créer une interface pour faire une projection qui s'appelle p1 et qu
 
 . Après on va créer une projection 2 qui permet d'afficher le solde et le type de compte, la commande suivant http://localhost:8082/comptes/1?projection=p2 affiche le résultat avec la projection p2 :
 ![image](https://user-images.githubusercontent.com/82270887/172942673-7e025db5-8f6c-4b27-a47b-323183139ca5.png)
-
+. Pour afficher l'id de chaque comte on ajoute un restConfiguartion
+Résultat obtenus après l'exécution  de la commande http://localhost:8082/comptes/1 :
+![image](https://user-images.githubusercontent.com/82270887/172943528-beb31cfd-96ca-4f82-93a2-282399da13e3.png)
+. Et pour accéder aux comptes par un type spécifier ,il suffit d'ajouter une methode findByType dans l'interface CompteRepository ,l'exécution  de la commande http://localhost:8082/comptes/search/byType?type=COURANT :
+![image](https://user-images.githubusercontent.com/82270887/172943874-7bbfed1e-3df9-411e-9260-84e0ec1e163b.png)
 
 
