@@ -73,4 +73,10 @@ Résultat obtenus après l'exécution  de la commande http://localhost:8082/comp
 . Et pour accéder aux comptes par un type spécifier ,il suffit d'ajouter une methode findByType dans l'interface CompteRepository ,l'exécution  de la commande http://localhost:8082/comptes/search/byType?type=COURANT :
 ![image](https://user-images.githubusercontent.com/82270887/172943874-7bbfed1e-3df9-411e-9260-84e0ec1e163b.png)
 
+### Effuctuer un virement
+pour faire un virement ,on va créer une méthode virement dans l'interface CompteService,puis on va créer un RestController pour tester le virement:
+
+
+
+
 
