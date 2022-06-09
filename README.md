@@ -18,7 +18,7 @@ cette interface nous a permis d'accedée à notre base de données
 
 ![c9](https://user-images.githubusercontent.com/82270887/163655385-857489ca-ce3b-46cc-9c63-3e58d53263b7.png)
 On remarque que notre table comptre à été crée.
-On cre=ée un Rest Controller (la classe CompteRestController),dans cette classe on crée une méthode qui récupére la liste des comptes
+On crée un Rest Controller (la classe CompteRestController),dans cette classe on crée une méthode qui récupére la liste des comptes
 @GetMapping(path="/comptes") pour accéder à cette méthode avec la requet Get
 lorsque on travail avec les micro service on crée plusieurs services dans notre machine ,ce qui fait que nous avons besoin d'attribuer
 un numero de port pour chaque service.
@@ -60,3 +60,13 @@ On peut aussi tester avec swagger
 ### SUPPRIMER UN COMPTE AVEC SWAGGER
 
 ![c19](https://user-images.githubusercontent.com/82270887/163655898-20cf47c8-45c5-4f80-9029-e1b90a0199d0.png)
+### Projection
+Puis on va créer une interface pour faire une projection qui s'appelle p1 et qui permet d'afficher le code et le solde ,la commande suivant http://localhost:8082/comptes/1?projection=p1 affiche le résultat avec la projection p1 :
+
+![image](https://user-images.githubusercontent.com/82270887/172942214-b4fa737d-a85c-40ce-8177-4ee1d5edecda.png)
+
+. Après on va créer une projection 2 qui permet d'afficher le solde et le type de compte, la commande suivant http://localhost:8082/comptes/1?projection=p2 affiche le résultat avec la projection p2 :
+![image](https://user-images.githubusercontent.com/82270887/172942673-7e025db5-8f6c-4b27-a47b-323183139ca5.png)
+
+
+
